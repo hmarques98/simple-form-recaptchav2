@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR"></script>
+
+    <title>Formulário</title>
+  </head>
+  <body style="background-color: #212121">
+    <div class="container">
+      <div class="container-form">
+        <div class="container-talk">
+          <h1 style="color: aliceblue">FALE CONOSCO</h1>
+        </div>
+
+        <main class="container-fields">
+          <form id="form">
+            <div class="container-input">
+              <div class="block-input name">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nome"
+                  id="name"
+                  maxlength="30"
+                />
+              </div>
+              <div class="block-input email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  id="email"
+                />
+              </div>
+            </div>
+            <div class="container-input">
+              <div class="block-input subject">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Assunto"
+                  id="subject"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <div class="container-input">
+              <div class="block-input">
+                <textarea
+                  rows="10"
+                  name="textarea"
+                  id="text-area"
+                  placeholder="Mensagem"
+                  maxlength="200"
+                ></textarea>
+              </div>
+            </div>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LdhiBoaAAAAAMhLkCBwHBixPbb1mdniNcKJkxzh"
+            ></div>
+            <div class="container-button">
+              <button type="submit" onclick="submitForm()">Enviar</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

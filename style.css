@@ -1,0 +1,98 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.container-form {
+  background-color: #ffffff;
+  height: 40rem;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+}
+.container-talk {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 95%;
+
+  border-radius: 4px;
+  box-shadow: 2px 3px 20px 1px #000000;
+
+  margin-top: -5%;
+}
+
+.container-talk h1 {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.container-input {
+  display: flex;
+  margin: 2rem 0;
+}
+.container-fields {
+  margin-top: 2rem;
+  height: 60%;
+  width: 80%;
+}
+
+.block-input {
+  background-color: white;
+  border-bottom: 1px solid rgb(201, 199, 199);
+  padding: 6px 0;
+  flex: 1;
+  margin: 0 4px;
+}
+
+.block-input input {
+  border: none;
+  width: 100%;
+}
+
+.block-input input::placeholder {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+#text-area {
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+#text-area::placeholder {
+  font-family: "Roboto";
+
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.container-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+.container-button button {
+  background-color: #212121;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 3px;
+}
+
+.error {
+  border-color: red;
+}
